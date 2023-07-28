@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import './App.css';
+import myGame from './img/game-thumbnail.png';
 
 
 
@@ -18,7 +19,8 @@ const App = () => {
       technologies: ['React', 'HTML5', 'CSS3'],
       demoLink: 'https://game-portfolio-bay.vercel.app/',
       githubLink: 'https://github.com/11liza/Game-Portfolio',
-      imageSrc: './src/img/game-thumbnail.png', // Replace with the actual image path
+      imageSrc: <img src={myGame} alt="Picture of game" />
+
     },
   ];
   
