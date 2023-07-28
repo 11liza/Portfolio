@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Project from './components/Project';
+import Projects from './components/Projects';
 import './App.css';
 
 
