@@ -31,8 +31,8 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/project">
-              Project
+            <NavLink exact to="/projects">
+              Projects
             </NavLink>
           </li>
         </ul>

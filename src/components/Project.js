@@ -13,6 +13,7 @@ const Project = ({ project }) => {
         ))}
       </ul>
       <div>
+        {/* Add target="_blank" to open the link in a new tab */}
         <a href={demoLink} target="_blank" rel="noopener noreferrer">
           Live Demo
         </a>
