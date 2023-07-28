@@ -17,7 +17,7 @@ const App = () => {
       description: 'A description of my game project.',
       technologies: ['React', 'HTML5', 'CSS3'],
       demoLink: 'https://game-portfolio-bay.vercel.app/',
-      githubLink: 'https://github.com/my-game-repo',
+      githubLink: 'https://github.com/11liza/Game-Portfolio',
       imageSrc: 'src\img\game-thumbnail.png', // Replace with the actual image path
     },
   ];
