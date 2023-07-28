@@ -1,13 +1,1 @@
-name: Dummy Workflow
 
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  dummy-job:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Performing a dummy action
-      run: echo "This is a dummy action."
