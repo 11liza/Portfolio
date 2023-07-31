@@ -25,6 +25,14 @@ const App = () => {
       githubLink: 'https://github.com/huenguyensw/ProjectEcommerce',
       // Include the correct image path for this project
     },
+
+    {
+      title: 'My other github repositories',
+      description: 'My github',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'UI/UX'],
+      githubLink: 'https://github.com/11liza?tab=repositories',
+      // Include the correct image path for this project
+    },
   ];
 
   return (
