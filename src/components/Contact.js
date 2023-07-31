@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
- 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,10 +9,16 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    // You can perform any action with the form data here, for example, sending it to a server.
     console.log(formData);
+    // Reset the form fields after submission
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
 
- 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({

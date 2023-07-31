@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Project = ({ project }) => {
-  const { title, description, technologies, demoLink, githubLink, imageSrc } = project;
+  const { title, description, technologies, demoLink, githubLink } = project;
 
   return (
     <div className="project">
@@ -13,15 +13,16 @@ const Project = ({ project }) => {
         ))}
       </ul>
       <div>
-        {/* Add target="_blank" to open the link in a new tab */}
-        <a href={demoLink} target="_blank" rel="noopener noreferrer">
-          Live Demo
-        </a>
+        {/* Render the "Live Demo" link only if demoLink is available */}
+        {demoLink && (
+          <a href={demoLink} target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>
+        )}
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
           GitHub Repository
         </a>
-      </div>
-      <img src={imageSrc} alt={title} />
+      </div>      
     </div>
   );
 };

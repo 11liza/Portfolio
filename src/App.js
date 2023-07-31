@@ -6,8 +6,6 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import './App.css';
-import myGame from './img/game-thumbnail.png';
-
 
 
 const App = () => {
@@ -15,14 +13,22 @@ const App = () => {
     // Other project objects...
     {
       title: 'My Awesome Game',
-      description: 'A description of my game project.',
+      description: 'Rock paper scissors vs AI or human (local)',
       technologies: ['React', 'HTML5', 'CSS3'],
       demoLink: 'https://game-portfolio-bay.vercel.app/',
       githubLink: 'https://github.com/11liza/Game-Portfolio',
-      imageSrc: <img src={myGame} alt="Picture of game" />
-
+      // Include the correct image path for this project
     },
+    {
+      title: 'E-Commerce project',
+      description: 'E-Commerce project done with group, dependencies are out of date',
+      technologies: ['Vite', 'HTML5', 'CSS3'],
+      githubLink: 'https://github.com/huenguyensw/ProjectEcommerce',
+      // Include the correct image path for this project
+    },
+    
   ];
+  
   
   
   return (
@@ -36,7 +42,6 @@ const App = () => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects projectsData={projectsData} />} />
 
-          {/* <Route path="/project" element={<Project />} /> */}
         </Routes>
       </div>
     </Router>
@@ -44,4 +49,3 @@ const App = () => {
 };
 
 export default App;
-
