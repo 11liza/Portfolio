@@ -35,7 +35,6 @@ const App = () => {
         <Routes>
           {/* Set the default route to the About component */}
           <Route path="/" element={<About />} />
-          <Route path="/" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects projectsData={projectsData} />} />
