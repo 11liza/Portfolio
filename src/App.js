@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -8,6 +8,9 @@ import Projects from './components/Projects';
 import './App.css';
 
 const App = () => {
+  useEffect(() => {
+    document.title = "Liza's Portfolio";
+  }, []);
   const projectsData = [
     // Other project objects...
     {
