@@ -16,14 +16,12 @@ const App = () => {
       technologies: ['React', 'HTML5', 'CSS3'],
       demoLink: 'https://game-portfolio-bay.vercel.app/',
       githubLink: 'https://github.com/11liza/Game-Portfolio',
-      // Include the correct image path for this project
     },
     {
       title: 'E-Commerce project',
       description: 'E-Commerce project done with group, dependencies are out of date',
       technologies: ['Vite', 'HTML5', 'CSS3'],
       githubLink: 'https://github.com/huenguyensw/ProjectEcommerce',
-      // Include the correct image path for this project
     },
 
     {
@@ -31,7 +29,6 @@ const App = () => {
       description: 'My github',
       technologies: ['JavaScript', 'HTML5', 'CSS3', 'UI/UX'],
       githubLink: 'https://github.com/11liza?tab=repositories',
-      // Include the correct image path for this project
     },
   ];
 
