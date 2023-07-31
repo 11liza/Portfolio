@@ -7,7 +7,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import './App.css';
 
-
 const App = () => {
   const projectsData = [
     // Other project objects...
@@ -26,22 +25,20 @@ const App = () => {
       githubLink: 'https://github.com/huenguyensw/ProjectEcommerce',
       // Include the correct image path for this project
     },
-    
   ];
-  
-  
-  
+
   return (
     <Router>
       <div className="App">
         <Header />
 
         <Routes>
+          {/* Set the default route to the About component */}
+          <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects projectsData={projectsData} />} />
-
         </Routes>
       </div>
     </Router>
