@@ -1,8 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import CVFile from '../img/CV.pdf';
 import myPicture from '../img/CV-Photo.jpg';
 
 const Header = () => {
+ 
+ /*  const handleFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    CVFile(selectedFile);
+  }; */
+
   return (
     <header>
       <img src={myPicture} alt="Your Name" />
@@ -37,6 +44,12 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <div className="cv-download">
+        <a href={CVFile} download className="cv-download-link">
+          Download CV (PDF)
+        </a>
+      </div>
       
     </header>
   );

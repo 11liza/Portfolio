@@ -34,6 +34,9 @@ const Contact = () => {
         If you'd like to get in touch with me, feel free to use the form below or
         email me directly at <a href="mailto:capangpanganliza@yahoo.com">capangpanganliza@yahoo.com</a>.
       </p>
+      <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/liza-t%C3%A4llg%C3%A5rd-4967a122b/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>.
+      </p>
+
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name</label>

@@ -94,6 +94,23 @@ ul a:hover {
   background-color: #fff;
   color: var(--link-hover-color);
 }
+.cv-download {
+  margin-top: 20px;
+}
+
+.cv-download-link {
+  display: inline-block;
+  background-color: #053b71;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none; /* Remove the underline */
+  cursor: pointer;
+}
+
+.cv-download-link:hover {
+  background-color: #0365a2;
+}
 
 /* src/components/About.css */
 
