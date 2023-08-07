@@ -24,6 +24,7 @@ body{
 }
 
 /* Header */
+/* Header */
 header {
   color: #fafafc;
   padding: 20px;
@@ -42,8 +43,8 @@ header {
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(73, 184, 243, 0.1);
   display: flex;
@@ -53,14 +54,12 @@ img {
 h5 {
   font-size: 26px;
   margin: 0;
-  
 }
 
 h1 {
   font-size: 46px;
   margin: 10px 0;
 }
-
 
 nav {
   display: flex;
@@ -94,18 +93,17 @@ ul a:hover {
   background-color: #fff;
   color: var(--link-hover-color);
 }
-.cv-download {
-  margin-top: 20px;
-}
 
 .cv-download-link {
-  display: inline-block;
-  background-color: #053b71;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 4px;
-  text-decoration: none; /* Remove the underline */
-  cursor: pointer;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 60px; /* Adjust the positioning as needed */
+  left: 60%;
+  transform: translateX(-50%);
+  color: #fafafc;
+  background-color: #161617;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .cv-download-link:hover {
