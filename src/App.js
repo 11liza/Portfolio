@@ -26,7 +26,12 @@ const App = () => {
       technologies: ['Vite', 'HTML5', 'CSS3'],
       githubLink: 'https://github.com/huenguyensw/ProjectEcommerce',
     },
-
+    {
+      title: 'Simple Chatapp',
+      description: 'Chatapp made using React Native using an external API',
+      technologies: ['ReactNative', 'Javascript', 'React', 'HTML5', 'CSS3', 'UI/UX', 'ExpoGo'],
+      githubLink: 'https://github.com/11liza/ChatApp'
+    },
     {
       title: 'My other github repositories',
       description: 'My github',
