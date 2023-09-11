@@ -29,7 +29,7 @@ const App = () => {
     {
       title: 'Simple Chatapp',
       description: 'Chatapp made using React Native using an external API',
-      technologies: ['ReactNative', 'Javascript', 'React', 'HTML5', 'CSS3', 'UI/UX', 'ExpoGo'],
+      technologies: ['React Native', 'Javascript', 'React', 'HTML5', 'CSS3', 'UI/UX', 'ExpoGo'],
       githubLink: 'https://github.com/11liza/ChatApp'
     },
     {
