@@ -6,6 +6,7 @@ const Skills = () => {
     "CSS",
     "JavaScript",
     "React",
+    "React Native",
     "Node.js",
     "Git",
     "UI/UX Design",
@@ -18,6 +19,7 @@ const Skills = () => {
     "Jira",
     "Mongodb",
     "React Testing Library",
+    "Trello",
   ];
 
   return (
