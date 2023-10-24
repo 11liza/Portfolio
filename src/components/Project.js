@@ -5,6 +5,7 @@ const Project = ({ project }) => {
 
   return (
     <div className="project">
+      <h2 className='projects-container'>Projects</h2>
       <h3>{title}</h3>
       <p>{description}</p>
       <ul>
@@ -13,7 +14,7 @@ const Project = ({ project }) => {
         ))}
       </ul>
       <div>
-        {/* Render the "Live Demo" link only if demoLink is available */}
+
         {demoLink && (
           <a href={demoLink} target="_blank" rel="noopener noreferrer">
             Live Demo
@@ -22,7 +23,7 @@ const Project = ({ project }) => {
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
           GitHub Repository
         </a>
-      </div>      
+      </div>
     </div>
   );
 };

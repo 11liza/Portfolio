@@ -2,6 +2,15 @@ import React from 'react';
 
 const Skills = () => {
   const skillsList = [
+    /*     { name: "HTML", img: "/html.png" },
+        { name: "CSS", img: "/css.png" },
+        { name: "JavaScript", img: "/js.png" },
+        { name: "React", img: "/react.png" },
+        { name: "React Native", img: "/react-native.png" },
+        { name: "Node.js", img: "/node-js.webp" },
+        { name: "Git", img: "/Git-logo.png" },
+        { name: "UX/UI Design", img: "/ux-ui.png" }, */
+
     "HTML",
     "CSS",
     "JavaScript",
@@ -9,7 +18,7 @@ const Skills = () => {
     "React Native",
     "Node.js",
     "Git",
-    "UI/UX Design",
+    "UX/UI Design",
   ];
 
   const toolsList = [
@@ -27,7 +36,9 @@ const Skills = () => {
       <h2>Skills</h2>
       <ul>
         {skillsList.map((skill, index) => (
-          <li key={index}>{skill}</li>
+          <li key={index}>
+            {skill}
+          </li>
         ))}
       </ul>
 
@@ -38,7 +49,6 @@ const Skills = () => {
         ))}
       </ul>
     </div>
-    
   );
 };
 

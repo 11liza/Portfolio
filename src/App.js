@@ -12,7 +12,7 @@ const App = () => {
     document.title = "Liza's Portfolio";
   }, []);
   const projectsData = [
-    // Other project objects...
+
     {
       title: 'My Awesome Game',
       description: 'Rock paper scissors vs AI or human (local)',
@@ -46,7 +46,7 @@ const App = () => {
         <Header />
 
         <Routes>
-          {/* Set the default route to the About component */}
+
           <Route path="/" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />

@@ -1,109 +1,132 @@
 /* For computer screens */
-@media screen and (min-width: 1024px) {
-}
+@media screen and (min-width: 1024px) {}
+
 /* For tablets */
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-}
+@media screen and (max-width: 1023px) and (min-width: 768px) {}
+
 /* For phones */
-@media screen and (max-width: 767px) {
-}
+@media screen and (max-width: 767px) {}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: rgb(55, 84, 138);
   --link-color: #fafafc;
   --link-hover-color: #007BFF;
 }
 
-body{
+.app {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 5px;
+  background-color: #fafafc;
+  /* position: relative; */
 }
 
-/* Header */
+
 /* Header */
 header {
-  color: #fafafc;
+  background: linear-gradient(to bottom, #9166a1, #a77eb0, #e2c8e0);
+  border-radius: 10px;
+  color: #ffffff;
   padding: 20px;
-  text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  position: relative; 
-  height: 60vh;
-  border-radius: 5px;
-  background-image: url(img/CSS-in-powerapps.png);
+  text-align: center;
+  align-items: center;
 }
 
-.container-header_container {
-  padding: 10px 10%;
-}
 
 img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(73, 184, 243, 0.1);
-  display: flex;
-  align-items: flex-end;
+  position: relative;
+  right: 400px;
+  width: 300px;
+  height: 400px;
+  border-radius: 60%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: -30px;
 }
 
-h5 {
-  font-size: 26px;
-  margin: 0;
-}
-
+h5,
 h1 {
-  font-size: 46px;
-  margin: 10px 0;
+  font-size: 28px;
+  font-style: oblique;
+  margin-top: 10px;
+  margin: 5px;
+  position: relative;
+  top: 150px;
 }
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+
+  h5,
+  h1 {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+}
+
+
 
 nav {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  position: absolute; 
-  top: 20px; 
-  right: 20px; 
-  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
-ul {
+nav ul {
+  position: absolute;
+  right: 10px;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-ul a {
+nav a {
   color: #ffffff;
   text-decoration: none;
-  padding: 8px 16px;
-  margin: 0 10px;
+  padding: 8px 10px;
   border-radius: 10px;
   transition: background-color 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
+  background-color: #7352ba;
 }
 
-ul a:hover {
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:hover {
   background-color: #fff;
-  color: var(--link-hover-color);
+  color: #7352ba;
 }
 
 .cv-download-link {
-  margin-top: 20px;
-  position: absolute;
-  bottom: 60px; /* Adjust the positioning as needed */
-  left: 60%;
+  position: relative;
+  left: 10px;
+  top: -150px;
+  right: 50%;
   transform: translateX(-50%);
   color: #fafafc;
-  background-color: #161617;
+  background-color: #7352ba;
   padding: 10px;
   border-radius: 5px;
+  margin: 10px;
+
 }
 
 .cv-download-link:hover {
@@ -111,16 +134,18 @@ ul a:hover {
   color: var(--link-hover-color);
 }
 
-/* src/components/About.css */
 
-.about {
-  padding: 20px;
-   background-color: #f9f9f9;
-  border-radius: 8px;
+/*About.css */
+.about-container {
+  background-color: #f4e1f1;
+  color: #121212;
+  box-shadow: 5px 5px 10px #293337;
+  border-color: blanchedalmond;
+  border-radius: 5px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -129,41 +154,56 @@ p {
   line-height: 1.6;
 }
 
-/* src/components/Skills.css */
+/* Skills.css */
 
 .skills {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  background-color: #f4e1f1;
+  color: #121212;
+  box-shadow: 5px 5px 10px #293337;
+  font-size: 20px;
 }
 
 ul {
   list-style: none;
-  padding: 0;
-  gap: 2rem;
+  padding: 20px;
+  gap: 5rem;
+  margin: 10px;
+  margin-bottom: 20px;
+  display: flex;
 }
 
-li {
-  font-size: 18px;
-  margin-bottom: 8px;
+
+/* ul li img {
+  width: 100px;
+  height: 100px;
+} */
+
+h2 {
+  font-size: 25px;
+  padding: 20px;
 }
 
-/* src/components/Contact.css */
+/*Contact.css */
 
 .contact {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  background-color: #f4e1f1;
+  min-height: 50vh;
+  color: #121212;
+  box-shadow: 5px 5px 10px #293337;
+  font-size: medium;
+  border-radius: 5px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 15px;
+  padding: 10px;
 }
 
 form {
   display: grid;
   grid-gap: 10px;
+  padding: 10px;
 }
 
 label {
@@ -174,30 +214,37 @@ label {
 input,
 textarea {
   width: 100%;
-  padding: 8px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 button {
-  padding: 8px 16px;
-  background-color: #007BFF;
+  padding: 10px 16px;
+  background-color: #7352ba;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+
 }
 
 /* Project.css */
 .project {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  background-color: #f4e1f1;
+  min-height: 20vh;
+  color: #121212;
+  box-shadow: 5px 5px 10px #293337;
+  border-radius: 5px;
 }
+
 
 /* Project title */
 .project h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 /* Project description */
@@ -211,6 +258,7 @@ button {
   list-style: none;
   padding: 0;
   gap: 2rem;
+
 }
 
 /* Project technology item */
@@ -224,16 +272,17 @@ button {
   display: inline-block;
   margin-right: 10px;
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  background-color: #007BFF;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #7352ba;
   color: #fff;
   transition: background-color 0.3s ease;
 }
 
 /* Project link hover */
 .project a:hover {
-  background-color: #0056b3;
+  background-color: #0a0b0b;
 }
 
 /* Project image */

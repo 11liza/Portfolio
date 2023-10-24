@@ -4,20 +4,15 @@ import CVFile from '../img/CV.pdf';
 import myPicture from '../img/CV-Photo.jpg';
 
 const Header = () => {
- 
- /*  const handleFileChange = (event) => {
-    const selectedFile = event.target.files[0];
-    CVFile(selectedFile);
-  }; */
 
   return (
     <header>
-      <img src={myPicture} alt="Your Name" />
-      
-      <div className="container-header_container">
+      <div className="header">
         <h5>Hello, I'm </h5>
         <h1>Liza Tällgård</h1>
         <h5>Frontend Developer</h5>
+
+        <img src={myPicture} alt="Your Name" />
       </div>
 
       <nav>
@@ -50,7 +45,7 @@ const Header = () => {
           Download CV (PDF)
         </a>
       </div>
-      
+
     </header>
   );
 };
