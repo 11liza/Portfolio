@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import CVFile from '../img/CV.pdf';
+import CV from '../img/CV-Liza Tällgård-svenska.pdf';
 import myPicture from '../img/CV-Photo.jpg';
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
         <h1>Liza Tällgård</h1>
         <h5>Frontend Developer</h5>
 
-        <img src={myPicture} alt="Your Name" />
+        <img src={myPicture} alt="Liza Tällgård" />
       </div>
 
       <nav>
@@ -41,12 +41,12 @@ const Header = () => {
       </nav>
 
       <div className="cv-download">
-        <a href={CVFile} download className="cv-download-link">
+        <a href={CV} download className="cv-download-link">
           Download CV (PDF)
         </a>
       </div>
 
-    </header>
+    </header >
   );
 };
 

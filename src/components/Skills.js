@@ -19,6 +19,9 @@ const Skills = () => {
     "Node.js",
     "Git",
     "UX/UI Design",
+    "Angular",
+    "Typescript",
+
   ];
 
   const toolsList = [
@@ -29,6 +32,9 @@ const Skills = () => {
     "Mongodb",
     "React Testing Library",
     "Trello",
+    "FigJam",
+    "IntelliJ IDEA",
+    "Shortcuts",
   ];
 
   return (
